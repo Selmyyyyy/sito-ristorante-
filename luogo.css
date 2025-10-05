@@ -1,32 +1,20 @@
+body,html{
+  margin: 0px;
+  padding: 0px;
+}
+
 body{
-    margin: 0;
-    padding: 0;
-    background-color:rgb(250, 225, 189);
-}
- 
-.galleria{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    box-sizing: border-box;
+  background-color:rgb(255, 229, 190)
 }
 
-.galleria img{
-    width: 100%;
-    aspect-ratio: 16\ 9;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 12px;
-    transition: transform 0.3s ease;
-    filter: 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 4);
+.maps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+
 }
 
-.galleria img:hover{
-    transform: scale(1.03);
-    filter: brightness(1.1);
-}
 .img-header {
     /* Rimuove i pallini della lista */
     list-style: none;
@@ -49,7 +37,7 @@ body{
 /* Stile per il tag <a> per renderlo più leggibile e cliccabile */
 .img-header li a {
     text-decoration: none; /* Rimuove la sottolineatura */
-    color:black;
+    color: black; 
     padding: 5px 10px;
     display: block; /* Rende cliccabile tutta l'area del link */
     font-size: 1.2em;
@@ -62,4 +50,36 @@ header nav {
     width: 100%;
     /* Allinea la navigazione a destra (dato che .img-header ha justify-content: flex-end) */
     text-align: right; 
+}
+
+
+
+.mappa-container {
+    /* 1. Centratura e Dimensione */
+    max-width: 900px;
+    margin: 30px auto;
+    
+    position: relative; 
+    
+    /* CHIAVE: L'altezza che crea l'evidenza centrale */
+    padding-bottom: 56.25%; /* Rapporto 16:9 */
+    height: 0;
+    overflow: hidden;
+
+  
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); 
+}
+
+
+
+/* Regola per l'elemento della mappa (se è un iframe) */
+.mappa-container iframe {
+    /* CHIAVE: Sovrappone e riempie lo spazio del contenitore */
+    position: absolute; 
+    top: 0;             /* Inizia dall'alto */
+    left: 0;            /* Inizia da sinistra */
+    width: 100%;        /* Occupa il 100% della larghezza */
+    height: 100%;       /* Occupa il 100% dell'altezza */
+    border: 0;          /* Rimuove eventuali bordi */
 }

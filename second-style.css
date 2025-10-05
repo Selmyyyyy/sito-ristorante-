@@ -1,17 +1,58 @@
-.storia, .luogo {
-  padding: 80px 40px;
-  text-align: center;
-  background-color: #0e0e0e;
+body, html{
+    margin: 0px;
+    padding: 0px;
 }
 
-.storia h2, .luogo h2 {
-  color: #ffcc00;
-  margin-bottom: 20px;
+body{
+    background-color: blanchedalmond;
 }
 
-.storia p, .luogo p {
-  max-width: 800px;
-  margin: 0 auto;
+.img-header{
+   /* Rimuove i pallini della lista */
+    list-style: none;
+    /* Rimuove il padding e il margine predefiniti del browser */
+    padding: 0;
+    margin: 0;
+  background-image: url(./assets/templi-giapponesi.webp);
+  height: 300px;
+   /* Usa Flexbox per disporre gli elementi <li> in una riga */
+    display: flex;
+    /* Sposta tutti gli elementi a destra */
+    justify-content: flex-end;
+}
+ .img-header li{
+  margin-left: 20px; /* Spazio tra un link e l'altro */
+
+ }
+
+ .img-header li a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: black; /* Scegli un colore per il testo */
+    padding: 5px 10px;
+    display: block; /* Rende cliccabile tutta l'area del link */
+    font-size: 1.2em; /* Puoi usare 'em', 'rem' o 'px' per regolare la dimensione */
+    font-weight: bold; /* Rende il testo in grassetto */
+}
+
+   header nav {
+    /* Assicura che l'elemento nav occupi tutta la larghezza dell'header */
+    width: 100%;
+    /* Allinea la navigazione a destra (dato che .img-header ha justify-content: flex-end) */
+    text-align: right; 
+}
+
+main p{
+  font-size: 1.20em;
   line-height: 1.6;
-  color: #ddd;
+}
+
+ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 1.3em; 
+    line-height: 1.4;
+}
+
+h1, h2{
+color: rgb(36, 36, 101);
 }
