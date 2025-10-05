@@ -1,0 +1,28 @@
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.galleria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.galleria img {
+    width: 100%;
+    aspect-ratio: 16 \ 9;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    filter: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 4);
+}
+
+.galleria img:hover{
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
