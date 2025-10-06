@@ -8,77 +8,65 @@ body{
 }
 
 .img-header{
-   /* Rimuove i pallini della lista */
+   
     list-style: none;
-    /* Rimuove il padding e il margine predefiniti del browser */
-    padding: 0;
+     padding: 0;
     margin: 0;
   background-image: url(./assets/templi-giapponesi.webp);
   height: 300px;
-   /* Usa Flexbox per disporre gli elementi <li> in una riga */
-    display: flex;
-    /* Sposta tutti gli elementi a destra */
+  display: flex;
+  
     justify-content: flex-end;
 }
  .img-header li{
-  margin-left: 20px; /* Spazio tra un link e l'altro */
+  margin-left: 20px; 
 
  }
 
  .img-header li a {
-    text-decoration: none; /* Rimuove la sottolineatura */
-    color: black; /* Scegli un colore per il testo */
+    text-decoration: none; 
+    color: black;
     padding: 5px 10px;
-    display: block; /* Rende cliccabile tutta l'area del link */
-    font-size: 1.2em; /* Puoi usare 'em', 'rem' o 'px' per regolare la dimensione */
-    font-weight: bold; /* Rende il testo in grassetto */
+    display: block; 
+    font-size: 1.2em; 
+    font-weight: bold; 
 }
 
    header nav {
-    /* Assicura che l'elemento nav occupi tutta la larghezza dell'header */
+   
     width: 100%;
-    /* Allinea la navigazione a destra (dato che .img-header ha justify-content: flex-end) */
     text-align: right; 
 }
 
 footer {
-    /* Il footer di default è largo il 100%, ma è buona norma impostarlo esplicitamente */
+  
     width: 100%;
-    /* Allinea tutto il contenuto del footer a sinistra */
     text-align: left; 
-    /* Aggiungi un po' di spazio sopra e sotto il footer per separarlo dal main */
     padding: 20px 0; 
-    /* Puoi aggiungere un colore di sfondo o un bordo per evidenziarlo */
-    /* background-color: #f4f4f4; */ 
+   
+  
 }
 
 footer {
-    /* Il footer di default è largo il 100%, ma è buona norma impostarlo esplicitamente */
+    
     width: 100%;
-    /* Allinea tutto il contenuto del footer a sinistra */
     text-align: left; 
-    /* Aggiungi un po' di spazio sopra e sotto il footer per separarlo dal main */
     padding: 20px 0; 
-    /* Puoi aggiungere un colore di sfondo o un bordo per evidenziarlo */
-    /* background-color: #f4f4f4; */ 
+    
 }
 
-/* Regole per la lista di contatti */
+
 footer ul {
-    /* Rimuove i pallini della lista */
+   
     list-style: none;
-    /* Rimuove il margine e il padding predefiniti del browser */
     padding-left: 0; 
     margin: 0;
-    /* Aggiunge spazio a sinistra, se desideri che i contatti non tocchino il bordo */
-    margin-left: 20px; 
+   margin-left: 20px; 
 }
 
-/* Regola per i singoli elementi della lista */
+
 footer ul li {
-    /* Garantisce che ogni elemento della lista vada su una nuova riga */
-    display: block; 
-    /* Aggiunge un po' di spazio tra le voci di contatto */
+     display: block; 
     margin-bottom: 3px; 
     font-size: 1.20em;
     font-weight: bold;

@@ -28,25 +28,18 @@ body{
     filter: brightness(1.1);
 }
 .img-header {
-    /* Rimuove i pallini della lista */
     list-style: none;
-    /* Rimuove il padding e il margine predefiniti del browser */
     padding: 0;
     margin: 0;
-    
-    /* Usa Flexbox per disporre gli elementi <li> in una riga */
-    display: flex;
-    /* Sposta tutti gli elementi a destra */
-    justify-content: flex-end;
+     display: flex;
+   justify-content: flex-end;
 }
 
-/* Rende gli elementi della lista in linea, anche se non strettamente necessario 
-   con display: flex sul genitore, è buona pratica per i link di navigazione */
 .img-header li {
-    margin-left: 20px; /* Spazio tra un link e l'altro */
+    margin-left: 20px; 
 }
 
-/* Stile per il tag <a> per renderlo più leggibile e cliccabile */
+
 .img-header li a {
     text-decoration: none; /* Rimuove la sottolineatura */
     color:black;
@@ -56,9 +49,9 @@ body{
     font-weight: bold;
 }
 
-/* Allinea la navigazione in alto a destra all'interno dell'header */
+
 header nav {
-    /* Assicura che l'elemento nav occupi tutta la larghezza dell'header */
+  
     width: 100%;
     /* Allinea la navigazione a destra (dato che .img-header ha justify-content: flex-end) */
     text-align: right; 
